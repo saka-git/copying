@@ -1,0 +1,119 @@
+/* PC、スマホ共通 */
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 0;
+}
+
+/* PC用 */
+
+/*ヘッダー*/
+#nav-pc {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+  max-width: 600px;
+}
+
+/* ヘッダー文字共通 */
+#nav-pc a {
+  font-size: 34px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+/* MyProfile */
+.top {
+  border: 1px solid;
+  padding: 10px 28px;
+  margin-left: 20px;
+}
+
+/* メニュー */
+.menu a {
+  margin: 0 20px;
+}
+
+/* メインビジュアル */
+#main-visual {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+/* 見出しAbout,Works */
+h1 {
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px;
+}
+
+/* About */
+#about > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 顔写真 */
+.face-image {
+  border-radius: 50%;
+  height: 140px;
+  margin: 20px;
+}
+
+/* 名前 */
+h2 {
+  font-size: 24px;
+  margin: 10px;
+}
+
+/* 箇条書き */
+li {
+  font-size: 18px;
+  margin: 10px;
+}
+
+/* Works */
+#works > div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#works > div div {
+  margin: 10px;
+  width: 179px;
+}
+
+.works-image {
+  width: 100%;
+}
+
+/* フッター */
+#copyright {
+  text-align: center;
+}
+
+/* スマホ用 */
+@media screen and (max-width: 767px) {
+  #works {
+    margin: 0 60px;
+  }
+
+  #works > div {
+    display: block;
+    width: 100%;
+  }
+
+  #works > div div {
+    margin: 20px auto;
+    width: 100%;
+  }
+
+  .works-p {
+    text-align: center;
+  }
+}
